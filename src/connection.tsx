@@ -204,7 +204,7 @@ export const sendTransactions = async (
       const txn = dataJson.txn;
 
       let cmsSignedTxn = Transaction.from(txn.data);
-      console.log(cmsSignedTxn)
+      // console.log(cmsSignedTxn)
       candySignedTxns.push(cmsSignedTxn);
     }
     candySignedTxns.push(txnUnsigned);
